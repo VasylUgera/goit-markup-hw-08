@@ -301,7 +301,11 @@ body {
 
 .header__logo {
   margin-right: auto;
-  /*margin-right: 93px*/
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 93px;
+  }
 }
 
 .logo-studio {
@@ -315,19 +319,31 @@ body {
 }
 
 .nav {
-  display: none;
   /*display: flex;*/
+}
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
 }
 
 .header__container {
   display: flex;
   align-items: center;
-  /*justify-content: center;*/
+  justify-content: flex-start;
+}
+@media screen and (min-width: 1200x) {
+  .header__container {
+    justify-content: center;
+  }
 }
 
-/*.header__nav{
+@media screen and (min-width: 768px) {
+  .header__nav {
     margin-right: auto;
-}*/
+  }
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -335,7 +351,6 @@ body {
 }
 
 .authnav {
-  display: flex;
   padding: 0;
   margin: 0;
   align-items: center;
@@ -345,9 +360,16 @@ body {
   color: var(--accent-color);
 }
 
-.header__authnav {
-  display: none;
-  margin-left: auto;
+@media screen and (max-width: 767px) {
+  .header__authnav {
+    display: none;
+    margin-left: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__authnav {
+    display: flex;
+  }
 }
 
 .authnav__item {
@@ -440,6 +462,11 @@ body {
   background-color: transparent;
   border-color: transparent;
   color: black;
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
 }
 
 .mob-menu {
