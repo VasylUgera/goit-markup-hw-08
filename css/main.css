@@ -442,6 +442,12 @@ body {
   padding-bottom: 48px;
   padding-right: 21px;
 }
+.mob-menu > .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .menu-close {
   display: block;
@@ -449,7 +455,7 @@ body {
 }
 
 .menu-list {
-  margin-left: 40px;
+  padding-left: 40px;
   margin-bottom: 302px;
 }
 
@@ -469,6 +475,7 @@ body {
 }
 
 .mob-menu__tel {
+  display: block;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -477,10 +484,12 @@ body {
   letter-spacing: 0.02em;
   color: #2196F3;
   text-decoration: none;
-  margin-left: 40px;
+  padding-left: 40px;
+  margin-bottom: 32px;
 }
 
 .mob-menu__mail {
+  display: block;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -489,14 +498,25 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
-  margin-left: 40px;
+  padding-left: 40px;
 }
 
 .mob-soc {
   display: flex;
-  margin-left: 40px;
+  padding-left: 40px;
   margin-top: 64px;
   gap: 30px;
+}
+
+.mob-soc__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.3333;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  text-decoration: none;
 }
 
 .hero {
