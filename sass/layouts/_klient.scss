@@ -29,7 +29,7 @@
 }  
     
 .klient-list{
-   width: 100%;
+   width: calc((100% - 30px) / 2);
     @media screen and (min-width: 480px){
         width: calc((100% - 30px) / 2);
 } 

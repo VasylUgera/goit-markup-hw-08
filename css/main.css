@@ -76,9 +76,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  max-width: 480px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  width: calc(100% - 30px);
   padding: 40px;
   background-color: var(--primary--white-color);
 }
@@ -313,7 +314,8 @@ body {
 }
 
 .nav {
-  display: flex;
+  display: none;
+  /*display: flex;*/
 }
 
 .header__container {
@@ -343,6 +345,7 @@ body {
 }
 
 .header__authnav {
+  display: none;
   margin-left: auto;
 }
 
@@ -437,8 +440,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
 .hero-container {
@@ -513,23 +516,8 @@ body {
   color: var(--title-text-color);
 }
 
-.title-section {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1428;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  justify-content: start;
-  color: var(--title-text-color);
-  margin-bottom: 10px;
-}
-
-.text-section {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+.section-advantages {
+  padding: 60px 0;
 }
 
 .item-section {
@@ -549,6 +537,7 @@ body {
 
 .list-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 30px;
 }
@@ -561,6 +550,26 @@ body {
   .list-section {
     flex-basis: calc((100% - 90px) / 4); /*flex-basis*/
   }
+}
+
+.title-section {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  justify-content: start;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.text-section {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
 .icon-antenna::before {
@@ -778,7 +787,7 @@ body {
 }
 
 .klient-list {
-  width: 100%;
+  width: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 480px) {
   .klient-list {
@@ -825,6 +834,7 @@ body {
 
 .footer-container {
   display: block;
+  text-align: center;
   justify-content: center;
 }
 @media screen and (min-width: 1200px) {
@@ -841,7 +851,14 @@ body {
 }
 
 .footer-adres {
+  /*@media screen and (min-width: 768px){
   margin-right: 70px;
+  }*/
+}
+@media screen and (min-width: 480px) {
+  .footer-adres {
+    margin-bottom: 60px;
+  }
 }
 
 .container-logo {
@@ -924,6 +941,7 @@ body {
 
 .social {
   margin-right: auto;
+  margin-bottom: 60px;
 }
 
 .footer-internet {
@@ -999,6 +1017,8 @@ body {
 .signup-field {
   /*position: relative;*/
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 12px;
 }
 

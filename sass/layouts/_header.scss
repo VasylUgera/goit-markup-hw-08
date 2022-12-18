@@ -36,9 +36,9 @@
     color: #000000;
 }
 
-.nav{ 
-    display: flex;   
-
+.nav{
+    display: none; 
+    /*display: flex;*/ 
 }
 
 .header__container {
@@ -73,6 +73,7 @@
 }
 
 .header__authnav{
+    display: none;
     margin-left: auto;
 }
 
