@@ -47,9 +47,9 @@
     /*justify-content: center;*/
 }
 
-.header__nav{
+/*.header__nav{
     margin-right: auto;
-}
+}*/
 
 .menu{ 
     display: flex;
@@ -65,17 +65,17 @@
     padding: 0;
     margin: 0;
     align-items: center;
-    gap: 30px;
-    
+    gap: 30px;    
     &:hover ,
     &:focus {
     color: var(--accent-color);
-} 
+}
+}
+
 .header__authnav{
     margin-left: auto;
 }
 
-}
 
 .authnav__item{
     display: flex;

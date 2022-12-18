@@ -18,15 +18,14 @@
 
 
 .list-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: start;
-    gap: 30px;
-    @media screen and (min-width: 768px){
-        flex-basis: calc((100% - 60px) / 2);
+    display: flex;    
+    align-items: center;    
+    gap: 30px;    
+    @media screen and (min-width: 768px){        
+        flex-basis: calc((100% - 30px) / 2);
         }
     @media screen and (min-width: 1200px){
-    flex-basis: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);/*flex-basis*/
     }    
 }
 
