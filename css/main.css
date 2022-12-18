@@ -431,6 +431,16 @@ body {
   fill: currentColor;
 }
 
+.mob-menu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
 .hero {
   width: 100%;
   background-size: cover;
