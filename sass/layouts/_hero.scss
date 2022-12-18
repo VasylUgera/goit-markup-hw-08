@@ -1,0 +1,108 @@
+.hero {
+    width: 100%;
+    background-size: cover;
+    margin: 0 auto;
+    background-color: #2F303A;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+    url(../images/header-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;    
+    padding-top: 200px;
+    padding-bottom: 200px;              
+} 
+
+.hero-container{    
+    align-items: center;
+
+}
+
+.hero-title{      
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6153;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    align-items: center; 
+    color: #FFFFFF;    
+    margin:0 auto;
+    margin-bottom:  30px;
+    @media screen and (min-width: 768px){
+        width: 360px;
+    }   
+    @media screen and (min-width: 1200px){ 
+        width: 696px;       
+        font-size: 44px;
+        line-height: 1.3636;
+    }
+}
+
+
+
+ .button-hero {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8750;   
+    align-items: center;
+    letter-spacing: 0.06em;
+    border-color: transparent;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    color: var(--primary--white-color); 
+    cursor: pointer ;    
+    padding: 10px 32px;
+    transition: background-color var(--tran), color var(--tran);
+    &:hover,
+    &:focus {   
+   background-color: var(--button-active-color);
+}
+}
+
+
+ .hidden {
+	color: rgba(0, 0, 0, 0);
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+} 
+
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: start;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.title-section {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.03em;
+    text-transform: uppercase; 
+    justify-content: start;                                         
+    color: var(--title-text-color);
+    margin-bottom: 10px;
+}
+
+.text-section {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142;   
+    letter-spacing: 0.03em;    
+    color: var(--primary-text-color);
+}

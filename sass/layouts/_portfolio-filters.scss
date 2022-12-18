@@ -1,0 +1,49 @@
+
+.portfolio-filters { 
+    display: flex;     
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;    
+}
+
+
+.container-filter-portfolio {
+    padding-bottom: 16px;
+}
+
+
+.container-portfolio {
+    padding-top: 34px;
+}
+
+
+.button-portfolio {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    color: var(--title-text-color);
+    border-color: transparent;
+    flex-basis: calc((100% - 32px) / 5);
+    cursor: pointer;
+    transition:  background-color var(--tran), color var(--tran),
+    box-shadow var(--tran), border-radius var(--tran) ;
+    &:hover,
+    &:focus {    
+    background-color: var(--accent-color);
+    color: var(--primary--white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+}
+
+
+
+
+
