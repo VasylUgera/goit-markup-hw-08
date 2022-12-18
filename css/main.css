@@ -300,7 +300,8 @@ body {
 }
 
 .header__logo {
-  margin-right: 93px;
+  margin-right: auto;
+  /*margin-right: 93px*/
 }
 
 .logo-studio {
@@ -429,6 +430,16 @@ body {
   justify-content: center;
   margin-right: 10px;
   fill: currentColor;
+}
+
+.menu-open {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-color: transparent;
+  color: black;
 }
 
 .mob-menu {
