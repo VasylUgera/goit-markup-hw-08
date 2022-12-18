@@ -652,21 +652,6 @@ body {
   padding: 60px 0;
 }
 
-.item-section {
-  display: block;
-}
-.item-section::before {
-  display: block;
-  content: "";
-  height: 120px;
-  background: #F5F4FA;
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-size: 70px 70px;
-  background-position: center;
-  margin-bottom: 30px;
-}
-
 .list-section {
   display: flex;
   flex-direction: column;
@@ -682,6 +667,21 @@ body {
   .list-section {
     flex-basis: calc((100% - 90px) / 4); /*flex-basis*/
   }
+}
+
+.item-section {
+  display: block;
+}
+.item-section::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  background-position: center;
+  margin-bottom: 30px;
 }
 
 .title-section {
