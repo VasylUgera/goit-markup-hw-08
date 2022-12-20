@@ -23,10 +23,7 @@
 }
 
 .signup-input {
-    width: 358px;
-    @media screen and (min-width: 768px){
-      width: 450px;
-    }
+    width: 358px;    
     height: 50px;    
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -46,6 +43,12 @@
   }
     &:focus {
       outline: var(--button-active-color);
+  }
+  @media screen and (min-width: 768px){
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px){
+    width: 358px;
   }
 }
 

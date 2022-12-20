@@ -143,14 +143,10 @@
 
 
 
-.input-policy {	
-	letter-spacing: 0.03em;
-	font-size: 14px;
-	line-height: 1.7;
+.input-policy {
 	text-decoration: underline;
     color: var(--accent-color);
-	margin-left: 5px;
-    
+	    
 }
 
 .modal-input {
@@ -234,13 +230,9 @@
 	line-height: 1.166;
 	letter-spacing: 0.03em;
 	color: #757575;
-	@media screen and (min-width: 1200px){
-		font-style: normal;
-		font-weight: 400;
+	@media screen and (min-width: 1200px){		
 		font-size: 14px;
 		line-height: 1.7142;
-		letter-spacing: 0.03em;
-		color:#757575;
 	}
 
 

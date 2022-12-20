@@ -32,6 +32,12 @@ body {
 .portfolio {
   padding: 60px 0;
 }
+@media screen and (min-width: 1200px) {
+  .section,
+.portfolio {
+    padding: 94px 0;
+  }
+}
 
 .container {
   width: 100%;
@@ -186,12 +192,8 @@ body {
 }
 
 .input-policy {
-  letter-spacing: 0.03em;
-  font-size: 14px;
-  line-height: 1.7;
   text-decoration: underline;
   color: var(--accent-color);
-  margin-left: 5px;
 }
 
 .modal-input {
@@ -284,12 +286,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .modal-condition {
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7142;
-    letter-spacing: 0.03em;
-    color: #757575;
   }
 }
 
@@ -307,12 +305,8 @@ body {
   align-items: center;
   margin: 0 auto;
   border-bottom: 1px solid #ECECEC;
-}
-@media screen and (min-width: 480px) {
-  .header {
-    padding-top: 7px;
-    padding-bottom: 7px;
-  }
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -343,6 +337,11 @@ body {
   margin-right: auto;
 }
 @media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .header__logo {
     margin-right: 93px;
   }
@@ -421,13 +420,13 @@ body {
   align-items: center;
 }
 @media screen and (min-width: 768px) {
-  .authnav__item {
+  .authnav__item:not(:last-child) {
     margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .authnav__item {
-    margin-bottom: 0px;
+  .authnav__item:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 
@@ -448,11 +447,11 @@ body {
   color: var(--title-text-color);
   transition: color var(--tran);
 }
-.menu__link:hover, .menu__link:focus, .menu__link.menu__link-current {
+.menu__link:hover, .menu__link:focus, .menu__link.menu__link_current {
   color: var(--accent-color);
 }
 
-.menu__link-current::after {
+.menu__link_current::after {
   content: "";
   position: absolute;
   display: block;
@@ -550,10 +549,11 @@ body {
   position: absolute;
   top: 10px;
   right: 15px;
-  display: block;
+  display: flex;
   margin-left: auto;
   background-color: transparent;
-  border-color: transparent;
+  border: 0;
+  padding: 0;
 }
 
 /*.menu-close {
@@ -576,6 +576,10 @@ body {
   letter-spacing: 0.02em;
   color: #212121;
   text-decoration: none;
+}
+
+.menu-list__link_current {
+  color: var(--accent-color);
 }
 
 .mob-menu__tel {
@@ -624,20 +628,47 @@ body {
 
 .hero {
   width: 100%;
+  max-width: 1600px;
   background-size: cover;
   margin: 0 auto;
   background-color: #2F303A;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hi-banner__bg_1x_480w.jpg);
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url(./mobile@1x);
 }
 @media screen and (max-width: 1199px) {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hi-banner__bg_2x_480w.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(./tablet@1x);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px) {
+  .hero {
+    background-image: url(./tablet@2x);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url(./desktop@1x);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px) {
+  .hero {
+    background-image: url(./desktop@2x);
   }
 }
 
@@ -713,10 +744,9 @@ body {
   color: var(--title-text-color);
 }
 
-.section-advantages {
-  padding: 60px 0;
-}
-
+/*.section-advantages{
+    padding: 60px 0;
+}*/
 .list-section {
   display: flex;
   align-items: flex-start;
@@ -1002,6 +1032,7 @@ body {
 @media screen and (min-width: 1200px) {
   .klient-title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -1282,11 +1313,6 @@ body {
   color: var(--primary--white-color);
   padding-left: 15px;
 }
-@media screen and (min-width: 768px) {
-  .signup-input {
-    width: 450px;
-  }
-}
 .signup-input::-moz-placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -1310,6 +1336,16 @@ body {
 }
 .signup-input:focus {
   outline: var(--button-active-color);
+}
+@media screen and (min-width: 768px) {
+  .signup-input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .signup-input {
+    width: 358px;
+  }
 }
 
 .signup-button {
@@ -1346,9 +1382,20 @@ body {
 
 .portfolio-filters {
   display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-filters {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-filters {
+    margin-bottom: 50px;
+  }
 }
 
 .container-filter-portfolio {
@@ -1407,12 +1454,24 @@ body {
 
 .link-portfolio {
   background: var(--primary--white-color);
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .link-portfolio {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .link-portfolio {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .portfolio-img {
-  display: block;
+  display: flex;
+  height: 100%;
   text-decoration: none;
+  flex-direction: column;
 }
 .portfolio-img:hover, .portfolio-img:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1440,7 +1499,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.1556;
+  line-height: 1.5556;
   letter-spacing: 0.03em;
   color: var(--primary--white-color);
   transform: translateY(100%);
@@ -1453,6 +1512,7 @@ body {
 
 .tetle-portfolio {
   display: block;
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
   border-top: 0;
