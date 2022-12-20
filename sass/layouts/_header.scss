@@ -2,16 +2,19 @@
     align-items: center;
     margin:0 auto;    
     border-bottom: 1px solid #ECECEC;
-    @media screen and (max-width: 767px){
+    @media screen and (min-width: 480px){
         padding-top: 7px;
     padding-bottom: 7px;
     }
     @media screen and (min-width: 768px){
-        padding-top: 25px;
-    padding-bottom: 24px;
+        padding-top: 19px;
+        padding-bottom: 19px;
     }
+    @media screen and (min-width: 1200px){
+        padding-top: 24px;
+        padding-bottom: 25px;
 }
-
+}
 
 
 .logo {
@@ -292,8 +295,7 @@
     line-height: 1.1764;
     letter-spacing: 0.02em;
     color: #2196F3;
-    text-decoration: none;
-    padding-left: 40px;    
+    text-decoration: none;  
     margin-bottom: 32px;
 }
 
@@ -307,8 +309,7 @@
     line-height: 1.1666;
     letter-spacing: 0.02em;
     color: #757575;
-    text-decoration: none;
-    padding-left: 40px;    
+    text-decoration: none;    
 
 }
 
