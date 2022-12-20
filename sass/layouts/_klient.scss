@@ -16,7 +16,10 @@
     text-align: center;
     letter-spacing: 0.03em;    
     color: var(--title-text-color);
-    margin-bottom: 30px;    
+    margin-bottom: 30px; 
+    @media screen and (min-width: 1200px){
+        margin-bottom: 50px;
+    }    
 }
 
 

@@ -98,8 +98,10 @@
 .header__authnav{
     @media screen and (max-width: 767px){
         display: none;
-        margin-left: 87px;
     }
+    /*@media screen and (min-width: 768px){
+        margin-left: auto;
+    }*/
         @media screen and (min-width: 1200px){
             display: flex;
         }
@@ -111,6 +113,12 @@
 .authnav__item{
     display: flex;
     align-items: center;
+    @media screen and (min-width: 768px){
+        margin-bottom: 10px;
+    }
+    @media screen and (min-width: 1200px){
+    margin-bottom: 0px;
+    }    
 }
 
 
@@ -247,6 +255,8 @@
     right: 15px;
     display: block;
     margin-left: auto;
+    background-color: transparent;
+    border-color:transparent;
 }
 /*.menu-close {
     display: block;

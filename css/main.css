@@ -76,7 +76,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 480px;
+  max-width: 528px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   width: calc(100% - 30px);
@@ -379,10 +379,14 @@ body {
   color: var(--accent-color);
 }
 
+.header__authnav {
+  /*@media screen and (min-width: 768px){
+      margin-left: auto;
+  }*/
+}
 @media screen and (max-width: 767px) {
   .header__authnav {
     display: none;
-    margin-left: 87px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -394,6 +398,16 @@ body {
 .authnav__item {
   display: flex;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .authnav__item {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .authnav__item {
+    margin-bottom: 0px;
+  }
 }
 
 .menu__link,
@@ -517,6 +531,8 @@ body {
   right: 15px;
   display: block;
   margin-left: auto;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 /*.menu-close {
@@ -596,8 +612,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-container {
@@ -835,6 +851,11 @@ body {
     line-height: 1.1666;
   }
 }
+@media screen and (min-width: 1200px) {
+  .teams-title {
+    margin-bottom: 50px;
+  }
+}
 
 .container-teams {
   display: flex;
@@ -948,6 +969,11 @@ body {
   color: var(--title-text-color);
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .klient-title {
+    margin-bottom: 50px;
+  }
+}
 
 .container-klient {
   display: flex;
@@ -1011,6 +1037,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: flex;
+    text-align: left;
     align-items: baseline;
   }
 }
@@ -1021,14 +1048,14 @@ body {
   }
 }
 
-.footer-adres {
-  /*@media screen and (min-width: 768px){
-  margin-right: 70px;
-  }*/
-}
 @media screen and (max-width: 767px) {
   .footer-adres {
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-adres {
+    margin-right: 70px;
   }
 }
 
@@ -1188,9 +1215,18 @@ body {
 .signup-field {
   /*position: relative;*/
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 12px;
+}
+@media screen and (max-width: 1199px) {
+  .signup-field {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .signup-field {
+    flex-direction: row;
+  }
 }
 
 .signup-input {
