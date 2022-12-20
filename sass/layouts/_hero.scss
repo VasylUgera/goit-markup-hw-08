@@ -17,8 +17,7 @@
     @media screen and (max-width: 1199px){
     padding-top: 118px;
     padding-bottom: 118px;
-    }   
-    background-image: url(./mobile@1x);
+    }
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
@@ -27,16 +26,32 @@
         url(../images/hi-banner__bg_2x_480w.jpg);
     }
     @media screen and (min-width: 768px) {
-        background-image: url(./tablet@1x);
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+        url(../images/hi-banner__bg_1x_768w.jpg);        
     }
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px) {
-        background-image: url(./tablet@2x);
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+        url(../images/hi-banner__bg_2x_768w.jpg); 
     }
     @media screen and (min-width: 1200px) {
-        background-image: url(./desktop@1x);
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+        url(../images/hi-banner__bg_1x_1200w.jpg); 
     }
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px) {
-        background-image: url(./desktop@2x);
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+        url(../images/hi-banner__bg_2x_1200w.jpg); 
     }
     
 } 
