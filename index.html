@@ -163,12 +163,27 @@
         <div class="container">
           <h2 class="teams-title">Наша команда</h2>          
             <ul class="container-teams list">
-              <li class="link-teams">
-                <img
-                  src="./images/demyanenko.jpg"
-                  alt="Ігор Дем'яненко"
-                  width="270"
-                  height="260">
+              <li class="link-teams">                
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="
+                        ./images/Igor_Demyanenko_1x_450w.jpg 1x,
+                        ./images/Igor_Demyanenko_2x_450w.jpg 2x
+                        ">
+                    <source media="(min-width: 768px) and (max-width:1199px)" srcset="
+                        ./images/Igor_Demyanenko_1x_354w.jpg 1x,
+                        ./images/Igor_Demyanenko_2x_354w.jpg 2x
+                        ">
+                      <source media="(min-width: 1200px)" srcset="
+                        ./images/Igor_Demyanenko_1x_270w.jpg 1x,
+                        ./images/Igor_Demyanenko_2x_270w.jpg 2x
+                        ">
+                        <img
+                        src="./images/demyanenko.jpg"
+                        alt="Ігор Дем'яненко"
+                        width="270"
+                        height="260">
+                </picture>
+        
                 <div class="teams-tetle">
                   <h3 class="section-teams">Ігор Дем'яненко</h3>
                   <p class="text-teams" lang="en">Produkt Designer</p>
